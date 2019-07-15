@@ -49,12 +49,29 @@
           <div class="pane">
             <h3 class="task-nav-header">Current Task</h3>
             <div class="task active-task">
-              <span class="task-hdr"><strong>Finish TrAScKer</strong></span>
-              <div class="task-subgoals">
+              <div class="taskbox-top">
+                  <div class="taskbox-top-content tb-topleft">
+                    <span class="task-hdr"><strong>Finish TrAScKer</strong></span>
+                  </div>
+                  <div id="taskbox-more-options" class="taskbox-top-content">
+                      <button type="button" class="taskbox-button"><span class="icon icon-dot-3 svg-ele"></span></button>
+                  </div>
+                  <div class="taskbox-top-content tb-top-icon">
+                    <button type="button" class="taskbox-button"><span class="icon icon-check svg-ele"></span></button>
+                  </div>
+                  <div class="taskbox-top-content tb-top-icon">
+                    <button type="button" class="taskbox-button"><span class="icon icon-cancel svg-ele"></span></button>
+                  </div>
+                  <div class="taskbox-top-content tb-top-icon">
+                    <button type="button" class="taskbox-button"><span class="icon icon-air svg-ele"></span></button>
+                  </div>
+              </div>
+              <div class="taskbox-bottom">
                 <span class="subgoal-hdr">Subgoals:</span>
                 <ul class="list-group">
                   <li class="subgoal-list-item">
-                    <p>Finish prototype</p>
+                    <input type="checkbox" id="subgoalCheckbox" name="subgoal-checked" value="subgoal-task">
+                    <label for="subgoalCheckbox">Finish prototype</p>
                   </li>
                   <li class="subgoal-list-item">
                     <p>Implement navigation JS</p>
@@ -68,7 +85,9 @@
                 </ul>
               </div>
             </div>
+
             <hr>
+            
             <h3 class="task-nav-header">Queued Tasks</h3>
             <ul class="list-group">
               <li class="list-group-item">
